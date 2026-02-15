@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "matrimony-poc-demo-ganap"
+  },
+  "targets": {
+    "matrimony-poc-demo-ganap": {
+      "hosting": {
+        "covenant-hearts": [
+          "covenant-hearts"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

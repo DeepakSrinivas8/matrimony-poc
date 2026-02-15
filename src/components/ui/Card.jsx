@@ -1,0 +1,30 @@
+import React from 'react';
+
+const Card = ({ children, className = '', ...props }) => {
+    return (
+        <div
+            className={`bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden ${className}`}
+            {...props}
+        >
+            {children}
+        </div>
+    );
+};
+
+export const CardHeader = ({ children, className = '' }) => (
+    <div className={`px-6 py-4 border-b border-gray-100 ${className}`}>{children}</div>
+);
+
+export const CardTitle = ({ children, className = '' }) => (
+    <h3 className={`text-xl font-semibold text-gray-900 ${className}`}>{children}</h3>
+);
+
+export const CardContent = ({ children, className = '' }) => (
+    <div className={`p-6 ${className}`}>{children}</div>
+);
+
+export const CardFooter = ({ children, className = '' }) => (
+    <div className={`px-6 py-4 bg-gray-50 flex items-center ${className}`}>{children}</div>
+);
+
+export default Card;
